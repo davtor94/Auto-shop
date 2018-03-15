@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style  >
     .fondo{background: blue;}
+    .slider{
+      background: url("img/layer.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 440px;
+  }
+
     </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ml-outo fixed-top">
-      <a class="navbar-brand" href="#">icon</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mr-auto text-center fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="/img/icon.png" width="30" height="30" class="d-inline-block align-top " alt="">
+        AutoShop
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Imicio <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Citas</a>
@@ -34,15 +44,17 @@
               <a class="dropdown-item" href="#">Vehiculos</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">ayuda</a>
-            </div>
+            </div class=" ml-auto">
             <li class="nav-item ">
               <a class="btn btn-danger" href="#">Contacto</a>
             </li>
         </ul>
       </div>
     </nav>
-    <div class="container-fluid fondo text-center">
-      <h1>titulo</h1>
+    <div class="container-fluid slider justify-content-center d-flex  item align-items-center">
+    <div class="text-white text-center">
+        <h1 class="display-3">AutoShop</h1>
+    </div>
     </div>
 
     <!-- Optional JavaScript -->
