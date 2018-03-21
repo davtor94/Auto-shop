@@ -4,7 +4,7 @@ body{
   margin: 0;
   padding: 0;
 }
-video {
+img {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -34,18 +34,6 @@ video {
   margin: 15% auto 0 5%;
   color: white;
 }
-.headText h1:before{
-    font-family: FontAwesome;
-    content: "\f18c";
-    color: green;
-    margin: 5px;
-}
-.headText h1:after{
-    font-family: FontAwesome;
-    content: "\f18c";
-    color: green;
-    margin: 5px;
-}
 
 #polina {
   font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
@@ -53,9 +41,11 @@ video {
   background: rgba(0,0,0,0.7);
   color: white;
   padding: 2%;
-  width: 31%;
+  align-items: center;
+  width: 100%;
   margin: 3% 5% 5% auto;
   float: right;
+  margin: auto;
 }
 .btn-facebook{
 	background-color: #3b5998;
@@ -64,6 +54,7 @@ video {
 .btn-facebook:hover{
 	background-color: #fff;
 	color: #3b5998;
+
 }
 .btn-google{
 	background-color: #c23321;
@@ -85,4 +76,25 @@ video {
 }
 @media screen and (max-device-width: 800px) {
   #bgvid { display: none; }
+}
+
+img#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+}
+
+a:link {
+    color: white;
 }
