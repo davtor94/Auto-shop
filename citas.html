@@ -12,7 +12,6 @@
       background-position: center;
       height: 440px;
   }
-
     </style>
     <link rel="stylesheet" href="css/slidenav.css">
 
@@ -82,12 +81,13 @@
         <div class="row">
           <div class="col-md-3 col-12">
             <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn " onclick="closeNav()">&times;</a>
               <span class="text-white"style="font-size:30px;cursor:pointer">&#9776; Menu</span>
               <a href="" id="addcita">Agendar cita</a>
               <a href="#">Modificar cita</a>
               <a href="#">Cancelar cita</a>
               <a href="#">Contacto</a>
+      <input type="button" id="addcita" value="Asignar fadeTo()">
+              <a href="javascript:void(0)" class="closebtn " onclick="closeNav()"></a>
             </div>
           </div>
           <div class="col-md-9 col-12">
@@ -163,11 +163,11 @@
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="inputCity">Telefono adisional</label>
+            <label for="inputCity">Telefono adicional</label>
             <input type="text" class="form-control" id="inputCity">
           </div>
           <div class="form-group col-md-4">
-            <label for="inputState">Sucursar</label>
+            <label for="inputState">Sucursal</label>
             <select id="inputState" class="form-control">
               <option selected>Sucursal 1</option>
               <option>Sucursal 2</option>
@@ -192,9 +192,10 @@
       <p>Created by my team </p>
     </footer>
 
-      <script type="text/javascript" src="js/sidenav.js"></script>
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="js/sidenav.js"></script>
   </body>
 </html>
