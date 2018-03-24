@@ -36,7 +36,15 @@ body {
     margin-left: 50px;
 }
 #createCita {
-
+  color: white;
+  position:fixed;
+  float: right;
+  top: 20%;
+  right: auto;
+  z-index: 2;
+  display: none;
+  left: 20%;
+  background-color: gray;
 
 }
 
