@@ -17,9 +17,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mr-auto text-center">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mr-auto text-center fixed-top">
       <a class="navbar-brand" href="#">
         <img src="/img/icon.png" width="30" height="30" class="d-inline-block align-top " alt="">
         AutoShop
@@ -30,10 +31,10 @@
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav ">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Citas</a>
+            <a class="nav-link" href="citas.html">Citas</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -41,14 +42,14 @@
               Historial
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Clientes</a>
-              <a class="dropdown-item" href="#">Vehiculos</a>
+              <!--  <a class="dropdown-item" href="#">Clientes</a>  -->
+              <a class="dropdown-item" href="citas-admin.html">Vehiculos</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">ayuda</a>
+              <a class="dropdown-item" href="contacto.html">ayuda</a>
             </div>
             </li>
               <li class="nav-item">
-                <a class="btn btn-danger" href="#">Contacto</a>
+                <a class="btn btn-danger" href="contacto.html">Contacto</a>
               </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -58,14 +59,15 @@
               username
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">ver perfil</a>
+              <a class="dropdown-item" href="profile.html">ver perfil</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">cerrar sesion</a>
+              <a class="dropdown-item" href="sigin.html">cerrar sesion</a>
             </div>
             </li>
         </ul>
       </div>
     </nav>
+
     <div class="container-fluid slider justify-content-center d-flex  item align-items-center">
     <div class="text-white text-center">
         <h1 class="display-3">AutoShop</h1>
@@ -82,7 +84,7 @@
           <div class="col-md-3 col-12">
             <div id="mySidenav" class="sidenav">
               <span class="text-white"style="font-size:30px;cursor:pointer">&#9776; Menu</span>
-              <a href="#" onclick="abrirCita()" id="addcita">Agendar cita</a>
+              <a href="#" id="addcita">Agendar cita</a>
               <a href="#" >Modificar cita</a>
               <a href="#">Cancelar cita</a>
               <a href="#">Contacto</a>
@@ -146,32 +148,29 @@
 
     <div class="container-fluid col-md-6 col-8 " id="createCita">
       <form>
-        <div class="form-row ">
+        <div class="form-row mt-3">
           <div class="form-group col-md-6">
             <label for="inputEmail4">Numero de placas</label>
-            <input type="text" class="form-control" id="inputEmail4" placeholder="JEG4202">
+            <input type="text" class="form-control" placeholder="JEG4202">
           </div>
           <div class="form-group col-md-6">
-            <label for="inputPassword4">Fecha Deseada</label>
-            <input type="text" class="form-control" id="inputPassword4" placeholder="12/05/18">
+            <label for="inputPassword4">Numero telefono</label>
+            <input type="number" class="form-control" id="celphone">
           </div>
         </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Descripcion de la falla</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+          <textarea class="form-control" id="textarea1" rows="2"></textarea>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="inputCity">Telefono adicional</label>
-            <input type="text" class="form-control" id="inputCity">
+            <label for="inputdate">Dia</label>
+            <input type="date" class="form-control" id="inputdate" onchange="verDisponibilidad()">
           </div>
           <div class="form-group col-md-4">
-            <label for="inputState">Sucursal</label>
-            <select id="inputState" class="form-control">
-              <option selected>Sucursal 1</option>
-              <option>Sucursal 2</option>
-              <option>Sucursal 3</option>
-              <option>Sucursal 4</option>
+            <label for="horario">Horario Disponible</label>
+            <select id="horario" class="form-control">
+              <option value="horarios Disponibles">horarios Disponibles</option>
             </select>
           </div>
         </div>
@@ -183,14 +182,27 @@
             </label>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <div class="row mb-4">
+          <div class="col-6">
+            <button type="submit" class="btn btn-primary  " id="btnEnviarCita">Enviar</button>
+          </div>
+          <div class="col-6">
+            <button type="cancel" class="btn btn-primary  mr-2" id="btnCancelarCita">Cancelar</button>
+          </div>
+
+        </div>
       </form>
     </div>
     <br>
     <footer class="container-fluid bg-dark text-white py-3 text-center">
       <p>Created by my team </p>
     </footer>
-
+    <script type="text/javascript">
+    function verDisponibilidad() {
+      var x = document.getElementById("inputdate").value;
+      document.getElementById("horario").innerHTML = "<option value='horarios Disponibles'>" + x + "</option>";
+    }
+    </script>
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="js/bootstrap.min.js"></script>

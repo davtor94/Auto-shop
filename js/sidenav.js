@@ -1,8 +1,22 @@
+
 $(document).ready(function(){
     $("#addcita").click(function(){
-        $("#createCita").fadeToggle(3000);
-    });
+        $("#createCita").fadeToggle(2000);
+    }
+  );
+
+  $("#btnEnviarCita").click(function(){
+      $("#createCita").fadeOut(2000);
+  }
+);
+
+$("#btnCancelarCita").click(function(){
+    $("#createCita").fadeOut(2000);
+}
+);
+
 });
+
 
 function openNav() {
 

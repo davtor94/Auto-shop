@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style  >
+    .fondo{background: blue;}
+    .slider{
+      background: url("img/layer.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 440px;
+  }
+
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mr-auto text-center fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="/img/icon.png" width="30" height="30" class="d-inline-block align-top " alt="">
+        AutoShop
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="citas-admin.html">Citas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+              Historial
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Clientes</a>
+              <a class="dropdown-item" href="#">Vehiculos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">ayuda</a>
+            </div>
+            </li>
+              <li class="nav-item">
+                <a class="btn btn-danger" href="contacto.html">Contacto</a>
+              </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+              username
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">ver perfil</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">cerrar sesion</a>
+            </div>
+            </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid slider justify-content-center d-flex  item align-items-center">
+    <div class="text-white text-center">
+        <h1 class="display-3">AutoShop</h1>
+    </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+      <div class="row">
+        <h3 class="col-4">Consejos</h3>
+        <a href="#" class="btn btn-danger col-2">Agregar</a>
+      </div>
+
+      <p class="lead">Consejos Actialmente visibles para los usuarios: </p>
+      <div class="row">
+        <div class="col-md-9 col-12">
+
+        <!-- inicio del articulo -->
+        <div class="card text-white bg-dark border-light mb-4 ml-2">
+          <div class="card-header text-center">Frenos
+            <button type="button" class="close" id="deleteAdd" aria-label="Close">
+            <span aria-hidden="true" class="text-white">&times;</span>
+          </button>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <img src="img/frenos.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card-body col-9">
+              <h5 class="card-title">Revision preventiva</h5>
+              <p class="card-text">No olvides realizar una revision a todo el sistema de frenos antes de salir a carretera.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Leer mas...</a>
+            </div>
+          </div>
+        </div>
+        <!-- fin del articulo -->
+
+        <!-- inicio del articulo -->
+        <div class="card text-white bg-dark border-light mb-4 ml-2">
+          <div class="card-header text-center">Emision de humo
+            <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true" class="text-white">&times;</span>
+          </button>
+        </div>
+          <div class="row">
+            <div class="col-3">
+              <img src="img/humo-escape.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card-body col-9">
+              <h5 class="card-title">Cuida al planeta</h5>
+              <p class="card-text">Si detectas que tu automivil emite humo, no dudes en visitarnos, ya que esto es dañino para tu auto y tu planeta.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Leer mas...</a>
+            </div>
+          </div>
+        </div>
+        <!-- fin del articulo -->
+
+        <!-- inicio del articulo -->
+        <div class="card text-white bg-dark border-light mb-4   ml-2">
+          <div class="card-header text-center">Afinaciones periodicas
+            <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true" class="text-white">&times;</span>
+          </button>
+        </div>
+          <div class="row">
+            <div class="col-3">
+              <img src="img/afinacion.png" alt="" class="img-fluid">
+            </div>
+            <div class="card-body col-9">
+              <h5 class="card-title">Incrementa la vida de tu motor</h5>
+              <p class="card-text">Al realizar afinaciones anualmente o cada 12,000km disminuyes el desgaste de tu motor, tambien el consumo de gasoline disminuye.</p>
+              <p class="card-text">Por lo tanto, no olvides afinar tu vehiculo</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Leer mas...</a>
+            </div>
+          </div>
+        </div>
+        <!-- fin del articulo -->
+
+        <!-- inicio del articulo -->
+        <div class="card text-white bg-dark border-light mb-4 ml-2">
+          <div class="card-header text-center">Perdida de fluidos
+            <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true" class="text-white">&times;</span>
+          </button>
+        </div>
+          <div class="row">
+            <div class="col-3">
+              <img src="img/fugas.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card-body col-9">
+              <h5 class="card-title">Deteccion de fugas</h5>
+              <p class="card-text">Si persibes que tu automivil deja manchas en el piso, o notas que algun contenedor baja de nivel, acude inmediatamente al mecanico, esto podria evitarte un gasto mayor.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Leer mas...</a>
+            </div>
+          </div>
+        </div>
+        <!-- fin del articulo -->
+
+        <!-- inicio del articulo -->
+        <div class="card text-white bg-dark border-light mb-4 ml-2">
+          <div class="card-header text-center">Frenos
+            <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true" class="text-white">&times;</span>
+          </button>
+        </div>
+          <div class="row">
+            <div class="col-3">
+              <img src="img/frenos.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card-body col-9">
+              <h5 class="card-title">Revision preventiva</h5>
+              <p class="card-text">No olvides realizar una revision a todo el sistema de frenos antes de salir a carretera.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Leer mas...</a>
+            </div>
+          </div>
+        </div>
+        <!-- fin del articulo -->
+
+
+      </div>
+      <div class="col-md-3 col-12">
+        <div class="card text-white bg-primary mb-3">
+          <div class="card-header text-center ">Oferta!!!!!
+            <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true" class="text-white">&times;</span>
+          </button>
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Cambio de anticongelante</h5>
+            <p class="card-text">Cambio de anticongelante y revision de fugas.</p>
+              <p class="card-text text-center">Desde $2500.</p>
+              <p class="text-center mb-0"><a href="#" class="btn btn-outline-light btn-sm ">Ver mas...</a></p>
+          </div>
+        </div>
+        <div class="card text-white bg-secondary mb-3" >
+          <div class="card-header text-center">Oferta!!!!!
+            <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true" class="text-white">&times;</span>
+          </button>
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Rotacion de llantas</h5>
+            <p class="card-text">Rotacion y revision de llantas.</p>
+            <p class="card-text text-center">Por tan solo $100.</p>
+            <p class="text-center mb-0"><a href="#" class="btn btn-outline-light btn-sm ">Ver mas...</a></p>
+          </div>
+        </div>
+        <div class="card text-white bg-success mb-3" >
+          <div class="card-header text-center">Oferta!!!!!
+            <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true" class="text-white">&times;</span>
+          </button></div>
+          <div class="card-body">
+            <h5 class="card-title">Afinacion mayor</h5>
+            <p class="card-text">Cambio de filtro de aire, filtro de gasolina, filtro de aceite, bujias y 4 lts de aceite.</p>
+            <p class="card-text text-center">Desde $1,200.</p>
+            <p class="text-center mb-0"><a href="#" class="btn btn-outline-light btn-sm ">Ver mas...</a></p>
+          </div>
+        </div>
+        <div class="card text-white bg-danger mb-3" >
+          <div class="card-header text-center">Oferta!!!!!
+            <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true" class="text-white">&times;</span>
+          </button>
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Cambio de aceite</h5>
+            <p class="card-text">Cambio de aceite y cambio de aceite (4lts).</p>
+            <p class="card-text text-center">Desde $350.</p>
+            <p class="text-center mb-0"><a href="#" class="btn btn-outline-light btn-sm ">Ver mas...</a></p>
+          </div>
+        </div>
+        <div class="card text-white bg-info mb-3">
+          <div class="card-header text-center">Oferta!!!!!
+            <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true" class="text-white">&times;</span>
+          </button>
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Revision de frenos</h5>
+            <p class="card-text">Revision de frenos y 100 puntos de seguridad.</p>
+            <p class="card-text text-center">Por solo $150.</p>
+            <p class="text-center mb-0"><a href="#" class="btn btn-outline-light btn-sm ">Ver mas...</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer class="container-fluid bg-dark text-white py-3 text-center">
+      <p>Created by David Torres </p>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script >
+      $(document).ready(function(){
+      $("button.close").click(function(){
+           confirm("Desea eliminar la publicacion seleccionada?");
+      });
+      });
+      </script>
+      </body>
+</html>

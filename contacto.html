@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style  >
+    .fondo{background: blue;}
+    .slider{
+      background: url("img/layer.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 440px;
+  }
+    </style>
+    <link rel="stylesheet" href="css/slidenav.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mr-auto text-center fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="/img/icon.png" width="30" height="30" class="d-inline-block align-top " alt="">
+        AutoShop
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="citas.html">Citas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+              Historial
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!--  <a class="dropdown-item" href="#">Clientes</a>  -->
+              <a class="dropdown-item" href="citas-admin.html">Vehiculos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="contacto.html">ayuda</a>
+            </div>
+            </li>
+              <li class="nav-item">
+                <a class="btn btn-danger" href="contacto.html">Contacto</a>
+              </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+              username
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="profile.html">ver perfil</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="sigin.html">cerrar sesion</a>
+            </div>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid slider justify-content-center d-flex  item align-items-center">
+    <div class="text-white text-center">
+        <h1 class="display-3">AutoShop</h1>
+    </div>
+    </div>
+
+<div class="container-fluid col-md-8 col-sm-12" role="alert">
+  <div class="row  justify-content-center mt-5 alert alert-dark">
+    <div class="col-md-6 col-sm-12">
+      <img src="img/logo.jpe" alt="" class="img-fluid">
+    </div>
+    <div class="col-md-8 col-sm-12 text-center ">
+      <h1 class="display-4">AutoShop</h1>
+      <p class="h5">Telefono:         16458562</p>
+      <p class="h5">Telefono Celular: 3314115536</p>
+      <p class="h5">Correo: AutoShop@gmail.com</p>
+      <p class="h5">Direccion: Av.Patria #1194</p>
+    </div>
+    <div class="col-md-8 col-sm-12"id="map" style="height:400px;"></div>
+  </div>
+</div>
+
+
+
+    <br>
+    <footer class="container-fluid bg-dark text-white py-3 text-center">
+      <p>Created by my team </p>
+    </footer>
+    <script type="text/javascript">
+    function initMap() {
+            var uluru = {lat: 20.6570536, lng: -103.32495389999997};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwXzVEvAJMHf9FIi4GdaVvzmhUXZ9iVP4&callback=initMap"></script>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/sidenav.js"></script>
+  </body>
+</html>

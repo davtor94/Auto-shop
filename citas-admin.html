@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style  >
+    .fondo{background: blue;}
+    .slider{
+      background: url("img/layer.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 440px;
+  }
+    </style>
+    <link rel="stylesheet" href="css/slidenav.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mr-auto text-center fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="/img/icon.png" width="30" height="30" class="d-inline-block align-top " alt="">
+        AutoShop
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="citas.html">Citas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+              Historial
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!--  <a class="dropdown-item" href="#">Clientes</a>  -->
+              <a class="dropdown-item" href="citas-admin.html">Vehiculos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="contacto.html">ayuda</a>
+            </div>
+            </li>
+              <li class="nav-item">
+                <a class="btn btn-danger" href="contacto.html">Contacto</a>
+              </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+              username
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="profile.html">ver perfil</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="sigin.html">cerrar sesion</a>
+            </div>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid slider justify-content-center d-flex  item align-items-center">
+    <div class="text-white text-center">
+        <h1 class="display-3">AutoShop</h1>
+    </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+
+      </div>
+      <div id="main">
+        <div class="row mt-3">
+          <div class="col-md-3 col-12">
+          </div>
+          <div class="col-md-4 col-12 ml-auto pr-1">
+            <h3 class="display-5">Seleccione una opcion: </h3>
+          </div>
+          <div class="col-md-4 col-12  mr-auto mt-2">
+            <select class="selectpicker col-md-4">
+                <option>Todas</option>
+                <option>vehiculo 1</option>
+                <option>vehiculo 2</option>
+            </select>
+          </div>
+        </div>
+        <h1 class="text-center">Citas pasadas</h1>
+        <div class="row">
+          <div class="col-md-2 col-12">
+
+          </div>
+          <div class="col-md-8 col-12">
+
+            <div class="card text-white bg-secondary mb-3">
+              <div class="card-header text-center">
+                Proxima cita
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Revision periodica</h5>
+                <p class="card-text">Vehiculo: Nissan Sentra.</p>
+                <p class="card-text">Placas: JEG4598.</p>
+                <p class="card-text">Hora acordada: 10:00 hrs.</p>
+                <p class="text-center my-0"><a href="#" class="btn btn-outline-light  btn-lg">Ver detalles</a> </p>
+              </div>
+              <div class="card-footer text-white  text-center">
+              martes 12 de enero del 2018
+              </div>
+            </div>
+
+            <div class="card text-white bg-secondary mb-3">
+              <div class="card-header text-center">
+                Proxima cita
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Afinacion programada</h5>
+                <p class="card-text">Vehiculo: Nissan Sentra.</p>
+                <p class="card-text">Placas: JEG4598.</p>
+                <p class="card-text">Hora acordada: 13:00 hrs.</p>
+                <p class="text-center my-0"><a href="#" class="btn btn-outline-light  btn-lg">Ver detalles</a> </p>
+              </div>
+              <div class="card-footer text-white  text-center">
+               martes 12 de enero del 2018
+              </div>
+            </div>
+
+            <div class="card text-white bg-secondary mb-3">
+              <div class="card-header text-center">
+              Cita sugerida
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Cambio de acumulador</h5>
+                <p class="card-text">Vehiculo: Nissan Sentra.</p>
+                <p class="card-text">Placas: JEG4598.</p>
+                <p class="card-text">Hora acordada: pendiente.</p>
+                <p class="text-center my-0"><a href="#" class="btn btn-outline-light  btn-lg">Ver detalles</a> </p>
+              </div>
+              <div class="card-footer text-white  text-center">
+              martes 12 de enero del 2018
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <footer class="container-fluid bg-dark text-white py-3 text-center">
+      <p>Created by my team </p>
+    </footer>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/sidenav.js"></script>
+  </body>
+</html>
